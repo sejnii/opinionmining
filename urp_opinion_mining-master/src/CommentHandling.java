@@ -284,7 +284,7 @@ public class CommentHandling {
                     String encode = URLEncoder.encode(snippet.getTextDisplay(), "UTF-8");
                     String result = EmojiParser.parseToAliases(snippet.getTextDisplay());
                     System.out.println(result);
-                    out.write(result);
+                    out.write(snippet.getTextDisplay());
                     out.newLine();
                     System.out.println("\n-------------------------------------------------------------\n");
 
