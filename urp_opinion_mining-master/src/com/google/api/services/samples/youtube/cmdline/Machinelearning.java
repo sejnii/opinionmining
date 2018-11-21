@@ -35,10 +35,18 @@ public class Machinelearning {
 		
 	}
 
-	public int sentiscore(int index) { // 벡터에 담긴 감성값 리턴
+	public int sentiscore(String inword) { // 벡터에 담긴 감성값 리턴
+		for(int i=0; i<vecvan.size();i++) {
+		if(inword.equals(vecvan.get(i).word)) { // 머신러닝 결과값에 있으면 1또는 -1 없으면 중립으로 보고 0
+		//	System.out.println(vecvan.get(i).word+"ml list에 있어!!");
+			if(vecvan.get(i).value >0)
+				return 1;
+			else return -1;
+			
+		}
 		
-		if(vecvan.get(index).value >0)
-			return 1;
-		else return -1;
+			}
+		return 0; // 리스트에 없으면 
+
 	}
 }

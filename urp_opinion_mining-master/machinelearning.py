@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #########평균으로 결과 구한 코드#########
 import numpy as np
 from sklearn import datasets
@@ -30,7 +31,7 @@ num = 500
 f.write("ntop : "+str(num)+'\n')
 
 ##형태소 분석 파일 열기
-van_f = open("verb.txt",'rt', encoding='UTF8')
+van_f = open("verb.txt",'rt', encoding="UTF8")
 
 #opinion mining에서 필요한 파일 열기
 om_f = open("conntojava.txt", "wt", encoding="UTF8")

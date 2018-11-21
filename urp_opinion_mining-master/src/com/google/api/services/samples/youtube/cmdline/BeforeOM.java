@@ -50,6 +50,7 @@ public class BeforeOM {//명사, 동사, 형용사만 찾아서 verb.txt에 넣�
 
 				}
 			}
+			bw.close();
 		}
 		catch(Exception e) {
 			System.out.println(e);
